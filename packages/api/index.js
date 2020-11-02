@@ -1,18 +1,8 @@
-module.exports = (request, response) => {
-  return response.json({
-    ok: true,
-    status: 200,
-    message: "Hello World!",
-    data: [
-      {
-        id: 1,
-      },
-      {
-        id: 2,
-      },
-      {
-        id: 3,
-      },
-    ],
-  });
-};
+const express = require("express");
+const app = express();
+
+app.get('/',(req,res) => {
+  res.send("This is a sample express app");
+});
+
+app.listen(3000, () => console.log('Server is booming on port 5000'));
