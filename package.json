@@ -1,0 +1,22 @@
+{
+  "name": "animeline",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "start": "lerna run start --stream",
+    "build": "lerna run build --stream",
+    "start:web": "yarn workspace @animeline/web start"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "typescript": "^4.0.5"
+  }
+}
