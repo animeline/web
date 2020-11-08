@@ -10,17 +10,24 @@
     ]
   },
   "scripts": {
+    "clean": "lerna exec --parallel -- rimraf dist build typings node_modules/.cache",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "start": "lerna run start --stream",
+    "prebuild": "yarn clean",
     "build": "lerna run build --stream",
+    "dev:api": "yarn workspace @animeline/api dev",
     "start:web": "yarn workspace @animeline/web start",
-    "dev:api": "yarn workspace @animeline/api dev"
+    "start:api": "yarn workspace @animeline/api start",
+    "build:api": "yarn workspace @animeline/api build",
+    "build:web": "yarn workspace @animeline/web start"
   },
   "dependencies": {
     "graphql": "^15.4.0"
   },
   "devDependencies": {
     "lerna": "^3.22.1",
+    "rimraf": "^3.0.2",
+    "ttypescript": "^1.5.12",
     "typescript": "^4.0.5"
   }
 }
