@@ -8,11 +8,11 @@ import app from "@root/app";
 import AnimeResolver from "@http/graphql/anime/AnimeResolver";
 
 interface OptionsManager {
-  port: number;
+  port: any;
 }
 
 class APIManager {
-  private port: number;
+  private port: any;
 
   constructor({ port }: OptionsManager) {
     this.port = port;
@@ -30,7 +30,7 @@ class APIManager {
     apolloServer.applyMiddleware({ app, path: "/graphql" });
 
     httpServer.listen({ port: this.port }, (): void =>
-      console.log("Server runinng")
+      console.log(`Server started in port ${this.port}`)
     );
   }
 }
