@@ -13,7 +13,11 @@
     "bootstrap": "lerna bootstrap --use-workspaces",
     "start": "lerna run start --stream",
     "build": "lerna run build --stream",
-    "start:web": "yarn workspace @animeline/web start"
+    "start:web": "yarn workspace @animeline/web start",
+    "dev:api": "yarn workspace @animeline/api dev"
+  },
+  "dependencies": {
+    "graphql": "^15.4.0"
   },
   "devDependencies": {
     "lerna": "^3.22.1",
