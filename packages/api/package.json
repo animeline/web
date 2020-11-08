@@ -4,28 +4,27 @@
   "main": "dist/server.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon",
-    "start": "node dist/server.js",
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "start": "cross-env NODE_ENV=production node dist/server.js",
     "prebuild": "rimraf dist",
-    "build": "ttsc",
-    "host": "yarn prebuild && yarn build && yarn start"
-  },
-  "devDependencies": {
-    "@types/express": "^4.17.8",
-    "@zerollup/ts-transform-paths": "^1.7.18",
-    "dotenv": "^8.2.0",
-    "nodemon": "^2.0.6",
-    "rimraf": "^3.0.2",
-    "ts-node": "^9.0.0",
-    "tsconfig-paths": "^3.9.0",
-    "ttypescript": "^1.5.12"
+    "build": "ttsc"
   },
   "dependencies": {
     "apollo-server-express": "^2.19.0",
     "axios": "^0.21.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-graphql": "^0.11.0",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "@zerollup/ts-transform-paths": "^1.7.18",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0",
+    "tsconfig-paths": "^3.9.0"
   }
 }
