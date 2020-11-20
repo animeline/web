@@ -1,6 +1,6 @@
 {
-  "exec": "ts-node -r tsconfig-paths/register src/server.ts",
-  "ext": "ts,json,gql,graphql",
+  "exec": "ts-node -r tsconfig-paths/register src/shared/infra/http/server.ts",
+  "ext": "ts,json",
   "ignore": ["node_modules", "src/**/*.spec.ts"],
   "watch": ["src/**/*.ts"]
 }
