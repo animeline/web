@@ -8,7 +8,7 @@
     "packages": [
       "packages/*"
     ]
-  },
+  },  
   "scripts": {
     "clean": "lerna exec --parallel -- rimraf dist build typings node_modules/.cache",
     "bootstrap": "lerna bootstrap --use-workspaces",
