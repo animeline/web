@@ -18,6 +18,7 @@
     "dev:api": "yarn workspace @animeline/api dev",
     "start:web": "yarn workspace @animeline/web start",
     "start:api": "yarn workspace @animeline/api start",
+    "start:bot": "yarn workspace @animeline/bot start",
     "build:api": "yarn workspace @animeline/api build",
     "build:web": "yarn workspace @animeline/web start"
   },
