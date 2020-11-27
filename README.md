@@ -1,10 +1,8 @@
-# 📺 AnimeLine
+# web
 
-A website to watch anime without advertising, totally open-source.
+A website to watch anime without advertising, completely free.
 
-## 🚀 Features
-
-**Web**
+## Features
 
 - [ ] List the data of all animes
 - [x] List the data of the last released anime
