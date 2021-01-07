@@ -25,7 +25,7 @@
     "swr": "0.3.11"
   },
   "devDependencies": {
-    "@types/jest": "26.0.19",
+    "@types/jest": "26.0.20",
     "@types/node": "12.19.12",
     "@types/react": "17.0.0",
     "@types/react-dom": "17.0.0",
