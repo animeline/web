@@ -1,3 +1,3 @@
-# web
+# animeline
 
 A website to watch anime without advertising, completely free.
