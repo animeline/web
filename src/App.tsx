@@ -1,5 +1,21 @@
+import { ApolloProvider } from '@apollo/client';
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 
-const App: React.FC = () => <h1>Hello Zev!</h1>;
+import { colors } from '@config/colors';
 
-export default App;
+import { client } from '@graphql/client';
+
+import { GlobalStyles } from '@styles/global';
+
+import { Routes } from './routes';
+
+export const App: React.FC = () => (
+  <ApolloProvider client={client}>
+    <ThemeProvider theme={colors}>
+      <GlobalStyles />
+
+      <Routes />
+    </ThemeProvider>
+  </ApolloProvider>
+);
